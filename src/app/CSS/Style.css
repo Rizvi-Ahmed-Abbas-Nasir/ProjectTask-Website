@@ -1,0 +1,1915 @@
+/* Pre-set */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global Variables */
+:root{
+    --base-text-clr:black;
+    --base-text-clr-opp:white;
+    --background-Header:white;
+    --background:white;
+    --backgroun-button0:#ff008a;
+    --half-backgorund:#f9e2ef;
+    --other-half-background:#203066;
+    /* box showdow color */
+    --showdow-box:0 2px 24px 0 rgba(151, 151, 151, 0.15);
+}   
+
+
+/* darkMode Theme */
+.darkmode{
+    --base-text-clr:white;
+    --base-text-clr-opp:black;
+    --background-Header:#232a3a;
+    --background:#181c28;
+    --backgroun-button0:rebeccapurple;
+    --half-backgorund:#666264;
+    --other-half-background:#2c3550;
+
+
+
+    /* box showdow color*/
+    --showdow-box:0 2px 24px 0 rgba(40, 40, 53, 0.15);
+}
+
+/* Animation */
+/* Keyframes */
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0px) scale(1);
+    }
+}
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0px) scale(1);
+    }
+}
+/* $$ */
+
+
+/* Header */
+.Header{
+    width: 100%;
+    height: 10vh;
+    background-color:var(--background);
+    color: var(--base-text-clr);
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    transition: all 100ms ease-in 0s;
+    position: sticky;
+}
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: var(--background-Header);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+/* HamBurger Icon */
+.HamBurgerIcon{
+    z-index: 1;
+}
+.HamLabal{
+    display:flex;
+    flex-direction:column;
+    width:30px;
+    cursor:pointer;
+    margin: 1.5em;
+    justify-items: center;   
+   }
+   
+   .HamLabal span{
+    background: var(--base-text-clr);
+    border-radius:50px;
+    height:3px;
+    margin: 7% 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+   }
+   
+   span:nth-of-type(1){
+     width:50%;
+     
+   }
+   span:nth-of-type(2){
+     width:100%;
+   }
+   
+   
+   span:nth-of-type(3){
+     width:75%;
+    
+   }
+   .HamBurgerIcon{
+    display: none;
+   }
+   
+   .HamCheckbox[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   .HamCheckbox[type="checkbox"]:checked ~ span:nth-of-type(1){
+     transform-origin:bottom;
+     transform:rotatez(45deg) translate(4px,0px)
+   }
+   
+   
+   .HamCheckbox[type="checkbox"]:checked ~ span:nth-of-type(2){
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   .HamCheckbox[type="checkbox"]:checked ~ span:nth-of-type(3){
+     
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(14px,-2px) rotatez(45deg);
+   
+   }
+
+#HeaderContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 10vh;   
+}
+.HeadersText{
+    display: flex;
+    color: var(--base-text-clr);
+    gap: 3rem;
+
+}
+.RegisterAndLogin{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.RegisterAndLogin button{
+    padding: 0.9rem 1.9rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--backgroun-button0);
+    color: var(--base-text-clr-opp);
+}
+/* $$ */
+
+/* FrontPage */
+
+.FrontPage{
+    width: 100%;
+    transition: all 100ms ease-in 0s;
+    height: 90vh;
+    background-color: var(--background);
+}
+
+.FrontContainer{
+    width: 100%;
+    height: 73vh;
+    background: linear-gradient(120deg, var(--half-backgorund) 50%, var(--other-half-background) 50%);
+    background-color: #fef5fa;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FrontContent{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.FrontTextcontent{
+    animation: fade-up 2s;
+}
+
+.FrontPhotoBox{
+    animation: fade-up 2s;
+}   
+.CircularImage{
+    width: 30%;
+    animation: fade-up 2s;
+    transition: all 100ms ease-in 0s;
+    height: 65%;
+    content: "";
+    border: 0.5px solid rgba(129, 129, 129, 0.18);
+    border-radius: 90%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+
+}
+.CircleContent{
+    content: "";
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(143, 143, 143, 0.1), rgba(139, 139, 139, 0));
+    border: 4px solid #ff008a; 
+    width: 80%;
+    height: 80%;
+    margin-top: 2rem;
+
+}
+.FrontPhotoBox{
+    transition: all 100ms ease-in 0s;
+    content: "";
+    background-color: var(--background);
+    width: 60%;
+    height: 17vh;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-text-clr);
+}
+#HeadingFront {
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+
+#HeadingFront h1{
+    font-size: 3.5rem;
+    color: #ff008a;
+
+}
+#HeadingFront h2 {
+    font-size: 3rem;
+    color: #203066;
+}
+.FrontSearchBar{
+    transition: all 100ms ease-in 0s;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.ForntearchContainer{
+    animation: fade-up 2s;
+    transition: all 100ms ease-in 0s;
+    content: "";
+    width: 70%;
+    height: 8.6vh;
+    background-color: var(--background) ;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2rem;
+    
+}
+.ForntearchContainer input{
+    margin-left: 1rem;
+    background-color: var(--background);
+    border: none;
+    
+}
+.ForntearchContainer:focus, input:focus{
+    outline: none;
+}
+.ForntearchContainer button{
+    padding: 0.9rem 3rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #203066;
+    color: white;
+    transition: all 100ms ease-in 0s;
+    margin-right:1rem ;
+}
+
+.FontTextsAndButtons{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-text-clr);
+}
+.TextsAndButton{
+   display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 8rem;
+    color: var(--base-text-clr);
+}
+.TextsAndButton button{
+    padding: 0.6rem 1.9rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #f4f4f7;
+    transition: all 100ms ease-in 0s;
+    color: black;
+}
+
+/* $$ */
+ 
+
+/* Icon */
+/* Light Theme Icon (sun) */
+.gg-sun {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 24px;
+    background:
+      linear-gradient(to bottom,
+          currentColor 4px,transparent 0)
+          no-repeat 5px -6px/2px 6px,
+      linear-gradient(to bottom,
+          currentColor 4px,transparent 0)
+          no-repeat 5px 14px/2px 6px,
+      linear-gradient(to bottom,
+          currentColor 4px,transparent 0)
+          no-repeat -8px 5px/6px 2px,
+      linear-gradient(to bottom,
+          currentColor 4px,transparent 0)
+          no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent
+  }
+  .gg-sun::after,
+  .gg-sun::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px
+  }
+  .gg-sun::before {
+    transform: rotate(-45deg)
+  }
+  .gg-sun::after {
+    transform: rotate(45deg)
+  }
+  /* $$ */
+
+
+.ThemeIcons :hover{
+    transition: all 1s ease-in-out 0s;
+    transform: rotate(230deg);
+}
+
+
+/* Moon Icon */
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent;
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+.ThemeIcons{
+    cursor: pointer;
+}
+/* Featured Content */
+.FeaturedContainer{
+    width: 100%;
+    height: 100vh;
+}
+.FeatureContent{
+    display: flex;
+    margin: 6rem;
+    flex-direction: column;
+    gap: 10rem;
+}
+.FeatureText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.FeatureText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.FeaturedBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.FeaturedBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+
+/* ## */
+
+
+/* Featured Content */
+.ServicesContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8fcfd;
+    
+}
+.ServiceBoxText{
+    display: flex;
+    margin-top: 0rem;
+    width: 100%;
+    height: 100vh;
+    justify-content: left;
+    align-items: start;
+
+}
+
+.ServiceBoxText2{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: start;
+}
+.ServiceBoxText3{
+    margin-top: 0rem;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.ServicesBoxContent{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ComputerReparingIMh{
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+}
+.ServiceContent{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    
+}
+
+.ServiceText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.ServiceText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.ServiresBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+.ServiesBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+
+
+/* $$ */
+
+/* Wokr Content */
+.WorksContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin-top:8rem ;
+    
+}
+
+.WorksContent{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    
+}
+
+.WorksText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.WorksText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.WorksBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+.WorksBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+/* $$ */
+
+/* Featured Content */
+.ProvidersContainer{
+    width: 100%;
+    height: 100vh;
+}
+.ProvidersContent{
+    display: flex;
+    margin: 6rem;
+    flex-direction: column;
+    gap: 10rem;
+}
+.ProvidersText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.ProvidersText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.ProvidersBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.boximg{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProvidersBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+
+/* ## */
+
+.PlanContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f8fcfd;
+    height: 150vh;
+    min-height: 100vh; /* Change height to min-height */
+}
+
+.PlanContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+
+.PlanText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.PlanText h2 {
+    font-size: 3rem;
+    color: #203066;
+}
+
+.PlanPricingBoxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 2rem;
+    width: 90%;
+}
+
+.PlanPricingBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border: 0.1px solid rgb(227, 227, 227);
+    border-radius: 16px;
+    /* margin: 1rem;
+    padding: 1rem; */
+    box-sizing: border-box;
+}
+
+.PlanPricingBox:nth-child(2) {
+    background-color: #203066;
+    color: var(--base-text-clr-opp);
+    margin-top: -3rem;
+    min-height: 75vh;
+}
+
+.PlanoneBtn button{
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--background);
+    color: var(--base-text-clr);
+}
+.PlanLastBTN button,
+.PlanLastBTN2 button {
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--background);
+    color: var(--base-text-clr-opp);
+}
+
+.PlanLastBTN button {
+    background-color: var(--backgroun-button0);
+}
+
+.PlanLastBTN2 button {
+    background-color: #203066;
+}
+
+.PlanBox1,
+.PlanBox2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.TextAndOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.TextAndOptions h3 {
+    color: var(--backgroun-button0);
+    font-size: 1.5rem;
+}
+
+.TextAndOptions h2 {
+    font-size: 2.5rem;
+}
+
+.checkBoxPlans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.checkbox-wrapper-13 label{
+    margin-left: 0.5rem;
+}
+.checkbox-wrapper-13 input[type=checkbox] {
+    --active: var(--backgroun-button0);
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 27px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:disabled + label {
+    cursor: not-allowed;
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:focus {
+    box-shadow: 0 0 0 var(--focus);
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+    width: 28px;
+    border-radius: 7px;
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+    width: 5px;
+    height: 10px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 10px;
+    top: 5px;
+    transform: rotate(var(--r, 20deg));
+}
+
+.checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+    --r: 43deg;
+}
+
+.bluePlan input[type=checkbox] {
+    --active: #203066;
+}
+
+.onePlanBox {
+    opacity: 0.2;
+}
+
+.PlanLastBTN,
+.PlanLastBTN2 {
+    margin-top: 2rem;
+}
+
+.PlanLastBTN button,
+.PlanLastBTN2 button {
+    padding: 0.8rem 2rem;
+    background-color: var(--backgroun-button0);
+    color: var(--base-text-clr-opp);
+    border: none;
+    border-radius: 20px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggle-switch-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px #ccc;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .toggle-switch-handle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-switch::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #aaa;
+    text-shadow: 1px 1px #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .toggle-switch-handle {
+    transform: translateX(45px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #05c46b;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .toggle-switch-background {
+    background-color: #05c46b;
+    box-shadow: inset 0 0 0 2px #04b360;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .toggle-switch:before {
+    content: "On";
+    color: #05c46b;
+    right: -15px;
+  }
+  
+  .toggle-switch input[type="checkbox"]:checked + .toggle-switch-background .toggle-switch-handle {
+    transform: translateX(40px);
+  }
+/* ## */
+
+/* Download */
+
+.DownloadContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DownloadContent{
+    display: flex;
+    width: 85%;
+    height: 80vh;
+    background-color: #f8fcfd;
+    border: none;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.DownloadBox{
+    width: 58%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.DownloadTextAndButton{
+    width: 55%;
+    height: 80vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.DownloadTextAndButton h1{
+    font-size: 3rem;
+}
+.DownloadTextAndButton p{
+    margin-top: 2rem;
+}
+.DownloadTAndBIMg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DownloadPhoneIMG{
+    width: 50%;
+    height: 80vh;
+    border-radius: 50px;
+    background-color: var(--backgroun-button0);
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+.DownloadTAndBIMg2{
+    display: flex;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TopContainer{
+    width: 100%;
+    height: 100vh;
+}
+.TopContent{
+    display: flex;
+    margin: 6rem;
+    flex-direction: column;
+    gap: 10rem;
+}
+.TopText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.TopText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.TopsBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.TopBoexe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+
+/* ## */
+
+
+.RecentContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin-top:8rem ;
+    
+}
+
+.RecentContent{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    
+}
+
+.RecentText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.RecentText h1{
+    font-size: 3.5rem;
+    color: #203066;
+}
+.RecentBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+.RecentBoxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: var(--showdow-box);
+    border:1px solid rgb(219, 217, 217);
+}
+
+.PartnersContainer{
+    width: 100%;
+    height: 50vh;
+}
+.PartnersContent{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.PartnerTexts h1{
+    font-size: 3rem;
+    color: #2c3550;
+}
+.PartnerTexts p{
+    margin-top: 2rem;
+}
+.PartnerBox{
+    padding: 0.1rem 2rem;
+    border:0.3px solid rgb(187, 186, 186);
+    border-radius: 20px;
+    margin-top: 5rem;
+
+}
+.PartnersIMGs{
+    width: 100%;
+    height: inherit;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.FooterContainer{
+    width: 100%;
+    display: flex;
+    height: 70vh;
+    background-color: #252525;
+}
+.FooterContent{
+    width: 100%;
+    flex-direction: column;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainContent{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    color: var(--base-text-clr-opp);
+
+}
+.FooterCont{
+    gap: 2rem;
+    display: flex;
+    align-items: left;
+    flex-direction:column;
+    width: 100%;
+}
+
+
+.AllRight{
+    font-size: 1.2rem;
+    color: var(--base-text-clr-opp);
+    margin-top: 3rem;
+}
+/* only for Time-Time */
+@media screen and (max-width: 1100px) {
+
+     /* Header */
+.HeadersText{
+    display: none;
+}
+.RegisterAndLogin{
+    display: none;
+}
+.HamBurgerIcon{
+    display: flex;
+}
+#HeadingFront h3{
+    font-size: 1rem;
+}
+#HeadingFront h1{
+    font-size: 3rem;
+}
+#HeadingFront h2{
+    font-size: 2.5rem;
+}
+.CircleContent{
+    width: 90%;
+    height: 85%;
+    margin-top:1rem ;
+}
+.CircularImage{
+    width: 30%;
+    height: 50%;
+}
+
+.PlanPricingBoxs{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    margin-top:35rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+.PlanPricingBox{
+    width: 80%;
+}
+.DownloadContainer{
+    margin-top: 65rem;
+
+}
+.DownloadContent{
+    width: 95%;
+
+}
+.PhoneING{
+    width: 90%;
+    height: 59vh;
+}
+.PartnersContainer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.PartnersContent{
+    width: 70%;
+    height: 50vh;
+   
+}
+
+.PartnerBox{
+    width: 20%;
+    height: 10vh;
+    
+}
+.PartnersIMGs{
+    width: 100%;
+}
+.PlaneIMg{
+    margin-top: 0rem;
+}
+
+
+.PlanLastBTN2{
+    margin-top: 0rem;
+}
+.PlanLastBTN{
+    margin-top: -0.5rem;
+}
+/* $$ */
+   
+  }
+  
+  
+  
+  
+@media screen and (max-width:790px){
+
+/* $$ */
+ 
+.HeadersText{
+    display: none;
+}
+.FrontSearchBar{
+    display: none;
+}
+.RegisterAndLogin{
+    display: none;
+}
+.HamBurgerIcon{
+    display: flex;
+}
+#HeadingFront h3{
+    font-size: 1rem;
+}
+#HeadingFront h1{
+    font-size: 3rem;
+}
+#HeadingFront h2{
+    font-size: 2.5rem;
+}
+.CircleContent{
+    width: 90%;
+    height: 85%;
+    margin-top:1rem ;
+}
+.CircularImage{
+    width: 30%;
+    height: 50%;
+}
+
+.FrontPage{
+    height: 110vh;
+}
+.FrontContainer{
+    height: 110vh;
+}
+.FeaturedBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.FeaturedBoxes{
+    width: 90%;
+}
+.FrontTextcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ForntearchContainer{
+    margin-top: 7rem;
+}
+.TextsAndButton{
+    width: 90%;
+}
+.FrontContent{
+    display: flex;
+    flex-direction: column;
+}
+.FeaturedContainer{
+    margin-top: 10rem;
+}
+.PlanPricingBoxs{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    margin-top:35rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+.PlanPricingBox{
+    width: 80%;
+}
+.PlanContent{
+    margin-top: 20rem;
+}
+.DownloadContainer{
+    margin-top: 65rem;
+
+}
+.DownloadContent{
+    width: 95%;
+
+}
+.PhoneING{
+    width: 90%;
+    height: 59vh;
+}
+.PartnersContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.PartnersContent{
+    width: 70%;
+    height: 100vh;
+    margin-top: 20rem;
+   
+}
+
+.PartnerBox{
+    width: 60%;
+    height: 10vh;
+    
+}
+.PartnersIMGs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.PartnersIMGs{
+    width: 100%;
+}
+ 
+.TextsAndButton{  
+     gap: 0rem;
+ }
+ .TextsAndButton button{
+     padding: 0.6rem 1.9rem;
+     border: none;
+     border-radius: 30px;
+     background-color: #f4f4f7;
+     transition: all 100ms ease-in 0s;
+     color: var(--base-text-clr);
+ }
+
+ .FooterContainer{
+    width: 100%;
+    display: flex;
+    height: 240vh;
+    margin-top: 30rem;
+    background-color: #252525;
+}
+.FooterContent{
+    width: 100%;
+    flex-direction: column;
+    height: 240vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainContent{
+   
+    height: 150vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.AllRight{
+    margin-top: 35rem;
+}
+
+
+.ServicesContainer{
+    height: 150vh;
+}
+.ServiceContent{
+    height: 150vh;
+    margin-top: 45rem;
+    gap: 2rem;
+}
+.ServiresBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ServiesBoxes{
+    width: 80%;
+    height: 40vh;
+}
+.WorksContent{
+    margin-top: 25rem;
+}
+.WorksBox{
+    flex-wrap: wrap;
+}
+.WorksBoxes{
+    width: 70%;
+    height: 30vh;
+}
+.TopContainer{
+    margin-top: 30rem;
+}
+.TopsBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.TopBoexe{
+    width: 90%;
+    height: 20vh;
+}
+
+.ProvidersContent{
+    margin-top: 33rem;
+}
+.ProvidersBoxes{
+    width: 90%;
+    height: 20vh;
+}
+.ProvidersBox{
+    flex-wrap: wrap;
+}
+.PlanContainer{
+    height:160vh;
+}
+.DownloadBox{
+    width: 100%;
+}
+.DownloadContent{
+    width: 90%;
+    height: 160vh;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+.DownloadPhoneIMG{
+    width: 80%;
+}
+.RecentContent{
+    margin-top: 38rem;
+}
+.RecentBox{
+    flex-wrap: wrap;
+}
+.RecentBoxs{
+    width: 80%;
+    height: 20vh;
+}
+
+.PlanLastBTN{
+    margin-top: 0.8rem;
+}
+.PlanLastBTN2{
+    margin-top: 1.5rem;
+}
+.bluePlan label{
+    font-size: 1rem;
+}
+.TextAndOptions h2{
+    font-size: 1rem;
+}
+.checkbox-wrapper-13{
+    font-size: 1rem;
+}
+/* $$ */
+}
+  
+  
+  
+@media screen and (max-width:481px){
+    .HeadersText{
+        display: none;
+    }
+    .FrontSearchBar{
+        display: none;
+    }
+    .RegisterAndLogin{
+        display: none;
+    }
+    .HamBurgerIcon{
+        display: flex;
+    }
+    #HeadingFront h3{
+        font-size: 1rem;
+    }
+    #HeadingFront h1{
+        font-size: 3rem;
+    }
+    #HeadingFront h2{
+        font-size: 2.5rem;
+    }
+    .CircleContent{
+        width: 100%;
+        height: 100%;
+        margin-top:0rem ;
+    }
+    .CircularImage{
+        width: 50%;
+        height: 80%;
+    }
+    .TextsAndButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .TextsAndButton button{
+        margin-top: 0.5rem;
+    }
+    .FrontPage{
+        height: 110vh;
+    }
+    .FrontContainer{
+        height: 110vh;
+    }
+    .FeatureContent{
+        align-items: center;
+        margin-top: 20rem;
+    }
+    .FeaturedBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .FeaturedBoxes{
+        width: 100%;
+    }
+    .FrontTextcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ForntearchContainer{
+        margin-top: 7rem;
+    }
+    .TextsAndButton{
+        width: 90%;
+    }
+    .FrontContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .FeaturedContainer{
+        margin-top: 10rem;
+    }
+    .PlanPricingBoxs{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        margin-top:35rem;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+    }
+    .PlanPricingBox{
+        width: 80%;
+    }
+    .PlanContent{
+        margin-top: 20rem;
+    }
+    .DownloadContainer{
+        margin-top: 65rem;
+    
+    }
+    .DownloadContent{
+        width: 95%;
+    
+    }
+    .PhoneING{
+        width: 90%;
+        height: 59vh;
+    }
+    .PartnersContainer{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .PartnersContent{
+        width: 70%;
+        height: 100vh;
+        margin-top: 20rem;
+       
+    }
+    
+    .PartnerBox{
+        width: 60%;
+        height: 10vh;
+        
+    }
+    .PartnersIMGs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .PartnersIMGs{
+        width: 100%;
+    }
+     
+    .TextsAndButton{  
+         gap: 0rem;
+     }
+     .TextsAndButton button{
+         padding: 0.6rem 1.9rem;
+         border: none;
+         border-radius: 30px;
+         background-color: #f4f4f7;
+         transition: all 100ms ease-in 0s;
+         color: var(--base-text-clr);
+     }
+    
+     .FooterContainer{
+        width: 100%;
+        display: flex;
+        height: 250vh;
+        margin-top: 30rem;
+        background-color: #252525;
+    }
+    .FooterContent{
+        width: 100%;
+        flex-direction: column;
+        height: 250vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .MainContent{
+       
+        height: 150vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    
+    }
+    
+    .AllRight{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 39rem;
+    }
+    .AllRight p{
+        font-size: 0.9rem;
+    }
+    
+    .ServiceContent{
+        margin-top: 36rem;
+        gap: 2rem;
+    }
+    .ServiresBox{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .ServiesBoxes{
+        width: 80%;
+        height: 20vh;
+    }
+    .WorksContent{
+        margin-top: 25rem;
+    }
+    .WorksBox{
+        flex-wrap: wrap;
+    }
+    .WorksBoxes{
+        width: 70%;
+        height: 30vh;
+    }
+    .TopContainer{
+        margin-top: 34rem;
+    }
+    .TopContent{
+        align-items: center;
+        text-align: center;
+    }
+    .TopsBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .TopBoexe{
+        width: 90%;
+        height: 20vh;
+    }
+    
+    .ProvidersContent{
+        align-items: center;
+        text-align: center;
+        margin-top: 33rem;
+    }
+    .ProvidersBoxes{
+        width: 90%;
+        height: 20vh;
+    }
+    .ProvidersBox{
+        flex-wrap: wrap;
+    }
+    .PlanContainer{
+        height:160vh;
+    }
+    .DownloadBox{
+        width: 100%;
+    }
+    .DownloadContent{
+        width: 90%;
+        height: 160vh;
+        flex-direction: column;
+        margin-top: 20rem;
+    }
+    .DownloadPhoneIMG{
+        width: 80%;
+    }
+    .RecentContent{
+        margin-top: 40rem;
+    }
+    .RecentBox{
+        flex-wrap: wrap;
+    }
+    .PlanLastBTN2 {
+        margin-top: 1rem;
+    }
+    .PlanLastBTN {
+        margin-top: -0.5rem;
+    }
+    .RecentBoxs{
+        width: 80%;
+        height: 20vh;
+    }
+    .bluePlan label{
+        font-size: 1rem;
+    }
+    .TextAndOptions h2{
+        font-size: 1rem;
+    }
+    .checkbox-wrapper-13 label{
+        font-size: 0.9rem;
+    }
+    .PlaneIMg{
+        margin-top: 1rem;
+    }
+    .DownloadTextAndButton h1{
+        font-size: 1rem;
+    }
+    .DownloadTextAndButton p{
+        font-size: 0.5rem;
+    }
+    .DownloadIMGG{
+        width: 70%;
+        height: 70%;
+    }
+    .PhoneING{
+        width: 80%;
+        height: 50%;
+    }
+    .ComputerReparingIMh{
+        width: 40%;
+        height: 40%;
+    }
+    .ServiceBoxText h2{
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    .ServiesBoxes{
+        height: 40vh;
+    }
+    .ServiceBoxText2{
+        font-size: 0.9rem;
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width:390px){
+
+    .PlanLastBTN2 {
+        margin-top: 1rem;
+    }
+    .PlanLastBTN {
+        margin-top: -0.5rem;
+    }
+    .PlanoneBtn button{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .PlanLastBTN button{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .PlanLastBTN2 button{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .RecentBoxs{
+        width: 80%;
+        height: 20vh;
+    }
+    .bluePlan label{
+        font-size: 1rem;
+    }
+    .TextAndOptions h2{
+        font-size: 0.7rem;
+    }
+    .checkbox-wrapper-13 label{
+        font-size: 0.5rem;
+    }
+    .PlaneIMg{
+        margin-top: 1rem;
+    }
+    .DownloadTextAndButton h1{
+        font-size: 1rem;
+    }
+    .DownloadTextAndButton p{
+        font-size: 0.5rem;
+    }
+    .DownloadIMGG{
+        width: 70%;
+        height: 70%;
+    }
+    .PhoneING{
+        width: 80%;
+        height: 50%;
+    }
+    .ComputerReparingIMh{
+        width: 40%;
+        height: 40%;
+    }
+    .ServiceBoxText h2{
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    .ServiesBoxes{
+        height: 40vh;
+    }
+    .ServiceBoxText2{
+        font-size: 0.9rem;
+        margin-top: 0rem;
+    }
+    .AllRight p{
+        font-size: 0.8rem;
+    }
+
+
+
+}
