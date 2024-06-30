@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Raleway } from 'next/font/google'
 import { Roboto } from 'next/font/google'
-import R_Logo from './Images/R_ogo.jpg'
+import R_Logo from './Images/R_ogo.png'
 
 
 const roboto = Roboto({ 
