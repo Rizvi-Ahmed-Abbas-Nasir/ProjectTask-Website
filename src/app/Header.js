@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Raleway } from 'next/font/google'
 import { Roboto } from 'next/font/google'
+import R_Logo from './Images/R_ogo.jpg'
 
 
 const roboto = Roboto({ 
@@ -88,8 +89,8 @@ export default function Header(){
         <div className="Header  header-section">
             <div className={roboto.className} id="HeaderContainer">
                 <div className="TextAndLogo">
-                    <Image
-                    src={"https://truelysell.dreamstechnologies.com/html/template/assets/img/logo-02.svg"}
+                    <Image className="R_Logo"
+                    src={R_Logo}
                     width={160}
                     height={100} 
                     />

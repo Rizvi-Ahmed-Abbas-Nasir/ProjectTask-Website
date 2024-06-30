@@ -149,6 +149,12 @@
    
    }
 
+.R_Logo{
+    width: 8rem;
+    height: 5rem;
+   
+}
+
 #HeaderContainer{
     display: flex;
     justify-content: space-around;
