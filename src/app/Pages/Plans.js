@@ -65,28 +65,28 @@ export default function Plans() {
                                 height={55}
                                 />
                             </div>
-                            <div className="TextAndOptions">
+                            <div className="TextAndOptions box2">
                                 <h3>Basic</h3>
                                 <h2>$ 70.00</h2>
                             </div>
                             <div className="checkBoxPlans"> 
-                            <div className="checkbox-wrapper-13">
+                            <div className="checkbox-wrapper-13 box2">
                                 <input id="c1-13" type="checkbox" checked="true" />
                                 <label for="c1-13">1 Bathroom cleaning </label>
                             </div>
-                            <div className="checkbox-wrapper-13">
+                            <div className="checkbox-wrapper-13 box2 ">
                                 <input id="c1-13" type="checkbox"  checked="true"  />
                                 <label for="c1-13">Up to 3 bedrooms cleaning</label>
                             </div>
-                            <div className="checkbox-wrapper-13">
+                            <div className="checkbox-wrapper-13 box2 ">
                                 <input id="c1-13" type="checkbox"  checked="true"  />
                                 <label for="c1-13">1 Livingroom cleaning</label>
                             </div>
-                            <div className="checkbox-wrapper-13">
+                            <div className="checkbox-wrapper-13 box2 ">
                                 <input id="c1-13" type="checkbox"   checked="true"  />
                                 <label for="c1-13">Small kitchen (0 - 150 ft2)</label>
                             </div>
-                            <div className="checkbox-wrapper-13">
+                            <div className="checkbox-wrapper-13 box2 ">
                                 <input id="c1-13" type="checkbox"  checked="true"   />
                                 <label for="c1-13">Up to 2 additional rooms cleaning</label>
                             </div>
