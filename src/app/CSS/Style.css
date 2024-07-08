@@ -1689,6 +1689,9 @@
   
   
 @media screen and (max-width:481px){
+    .Header{
+        min-height: 12vh;
+    }
     .HeadersText{
         display: none;
     }
