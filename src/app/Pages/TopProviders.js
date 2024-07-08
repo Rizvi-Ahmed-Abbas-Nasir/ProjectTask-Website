@@ -1,8 +1,23 @@
+"use client"
+import { useEffect } from "react";
+import OnScrollAnimation from '../OnScrollAnimmation';
 import Image from "next/image";
 export default function TopProviders() {
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements = document.querySelectorAll(".hidden");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     return(
         <div className="TopContainer">
-            <div className="TopContent">
+            <div className="TopContent hidden">
                 <div className="TopText">
                     <h1>Top Providers</h1>
                     <p>What do you need to find?</p>

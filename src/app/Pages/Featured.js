@@ -1,10 +1,25 @@
-
+"use client"
+import { useEffect } from "react";
+import OnScrollAnimation from '../OnScrollAnimmation';
 import Image from "next/image";
 
 export default function Featured() {
+
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements = document.querySelectorAll(".hidden");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     return(
         <div className="FeaturedContainer">
-            <div className="FeatureContent">
+            <div className="FeatureContent hidden">
                 <div className="FeatureText">
                     <h1>Featured Categories</h1>
                     <p>What do you need to find?</p>

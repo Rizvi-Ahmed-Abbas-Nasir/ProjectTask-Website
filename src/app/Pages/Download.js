@@ -1,11 +1,26 @@
+"use client"
+import { useEffect } from "react";
+import OnScrollAnimation from '../OnScrollAnimmation';
 import phone from "../Images/app-seven.png"
 import Image from "next/image";
 
 
 export default function Download() {
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements = document.querySelectorAll(".hidden");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     return(
         <div className="DownloadContainer">
-            <div className="DownloadContent">
+            <div className="DownloadContent hidden">
                 <div className="DownloadBox">
                     <div className="DownloadTextAndButton">
                         <h1>Download Our New App</h1>

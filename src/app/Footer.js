@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {  
     return(
         <div className="FooterContainer">
-            <div className="FooterContent">
+            <div className="FooterContent ">
                 <div className="MainContent">
                  <div className="FooterCont">
                     <Image 

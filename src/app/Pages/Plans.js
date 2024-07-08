@@ -1,9 +1,24 @@
+"use client"
+import { useEffect } from "react";
+import OnScrollAnimation from '../OnScrollAnimmation';
 import Image from "next/image";
 
 export default function Plans() {
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements = document.querySelectorAll(".hidden");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     return(
         <div className="PlanContainer">
-            <div className="PlanContent">
+            <div className="PlanContent hidden">
                 <div className="PlanText">
                     <h2>Pricing Plan</h2>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h4>

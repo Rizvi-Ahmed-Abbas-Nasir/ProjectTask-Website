@@ -12,7 +12,7 @@
     --background-Header:white;
     --background:white;
     --backgroun-button0:#ff008a;
-    --half-backgorund:#f9e2ef;
+    --half-backgorund:#fdf1f8;
     --other-half-background:#203066;
     --base-text-blue-white:#203066;
     --other-half-background1:rgb(243, 243, 247);
@@ -67,11 +67,56 @@
 }
 /* $$ */
 
+/* OnScroll Animation  */
+.hidden{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform:translateY(50px);
+    transition:all 1s;
+  }
+  .hidden2{
+      opacity:0;
+      /* filter:blur(5px); */
+      transform: translateX(-50%);
+      transition:all 1s;
+    }
+  
+  .hidden3{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-100%);
+    transition:all 1s;
+    }
+  
+  .show{
+  opacity:1;
+  filter:blur(0);
+  transform:translateY(0px);
+  }
+  
+  .showleftSlider{
+  
+      opacity: 1;
+      filter:blur(0);
+      transform: translateX(0%);
+  
+  }
+  
+  .rightSlider{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0px);
+  
+  }
+  /* ## */
+  
+  
+  /* $$ */
 
 /* Header */
 .Header{
     width: 100%;
-  
+    min-height: 10vh;
     height: 10vh;
     background-color:var(--background);
     color: var(--base-text-clr);
@@ -201,22 +246,31 @@
     height: 100vh;
     background-color: var(--background);
 }
+.mapContainer{
+    z-index: 0;
+}
 
 .FrontContainer{
     width: 100%;
     height: 73vh;
-    background: linear-gradient(120deg, var(--half-backgorund) 50%, var(--other-half-background) 50%);
     background-color: #fef5fa;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(120deg, var(--half-backgorund) 45%, var(--other-half-background) 45%);
+
 }
 
 .FrontContent{
+    background-image: url("../Images/map.png");
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-size: 50%;
     width: 80%;
     height: 80vh;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -334,7 +388,7 @@
 .TextsAndButton{
    display: flex;
     justify-content: space-around;
-    gap: 5rem;
+    gap: 1rem;
     margin-top: 8rem;
     color: var(--base-text-clr);
 }
@@ -1017,7 +1071,7 @@
     display: flex;
     width: 85%;
     height: 80vh;
-    background-color: #f8fcfd;
+    background-color: var(--other-half-background1);
     border: none;
     border-radius: 50px;
     flex-direction: row;
@@ -1065,8 +1119,7 @@
 .DownloadPhoneIMG{
     width: 50%;
     height: 80vh;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
     background-color: var(--backgroun-button0);
     display:flex;
     justify-content: center;
@@ -1421,6 +1474,7 @@
     width: 90%;
 }
 .FrontContent{
+    background-image: none;
     display: flex;
     flex-direction: column;
 }
@@ -1707,6 +1761,7 @@
         width: 90%;
     }
     .FrontContent{
+        background-image: none;
         display: flex;
         flex-direction: column;
     }

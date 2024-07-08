@@ -1,11 +1,26 @@
+"use client"
+import { useEffect } from "react";
+import OnScrollAnimation from '../OnScrollAnimmation';
 import Image from "next/image";
 // import computeworking from '../Images/images.jpeg';
 // import carWorking from '../Images/carWorking.jpg';
 
 export default function Service() {
+     //On Scroll Animation Function
+     useEffect(()=> {
+        if (typeof document !== 'undefined') {
+          // will run in client's browser only
+          var hiddenElements = document.querySelectorAll(".hidden");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden2");
+        //   var hiddenElement2 = document.querySelectorAll(".hidden3");
+          // console.log(hiddenElements);
+           OnScrollAnimation(hiddenElements)
+        //    OnScrollAnimation(hiddenElement2)
+        }
+        },[]);
     return(
         <div className="ServicesContainer">
-            <div className="ServiceContent">
+            <div className="ServiceContent hidden">
                 <div className="ServiceText">
                     <h1>Most Popular Services</h1>
                     <p>What do you need to find?</p>

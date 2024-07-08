@@ -2,7 +2,7 @@ import abbas from '../Images/Rizvi Ahmed Abbas2.png';
 import Image from 'next/image';
 import { Raleway } from 'next/font/google'
 import { Roboto } from 'next/font/google'
-
+import map from "../Images/map.png"
 
 const roboto = Roboto({ 
   subsets: ['latin'],
@@ -15,6 +15,7 @@ export default function FrontPage() {
         <div className="FrontPage">
             <div className="FrontContainer">
                 <div className="FrontContent">
+                   
                     <div className="FrontTextcontent">
                         <div className={roboto.className} id="HeadingFront">
                             <h3>Search From 150 Awesome Verified Ads!</h3>
@@ -42,7 +43,7 @@ export default function FrontPage() {
             </div>
             <div className='FontTextsAndButtons'>
                     <div className='TextsAndButton'>
-                            <h3>Popular Searchs</h3>
+                            <h3>Popular Search</h3>
                             <button>Electrical Work</button>
                             <button>Cleaning</button>
                             <button>AC Repair</button>
