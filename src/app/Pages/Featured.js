@@ -26,37 +26,56 @@ export default function Featured() {
                 </div>
                 <div className="FeaturedBox">
                     <div className="FeaturedBoxes">
-                        <div>
+                        <div className="FeaturedCircle">
                             <Image 
                                 src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/computer.svg"
-                                width={100}
-                                height={100}
+                                 
+                                width={80}
+                                height={80}
                             />
 
                         </div>
+                        <div className="FeaturedP">
+                            <p>Building</p>
+                        </div>
                     </div>
                     <div className="FeaturedBoxes">
+                    <div className="FeaturedCircle">
                     <Image 
                                 src=" https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/construction.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="FeaturedP">
+                            <p>Computer</p>
+                        </div>
                    
                     </div>
                     <div className="FeaturedBoxes">
+                    <div className="FeaturedCircle">
                     <Image 
                                 src="  https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/painting.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="FeaturedP">
+                            <p>Car</p>
+                        </div>
                    
                     </div>
                     <div className="FeaturedBoxes">
+                    <div className="FeaturedCircle">
                     <Image 
                                 src=" https://www.svgrepo.com/show/67430/paint-brush.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="FeaturedP">
+                            <p>Painting</p>
+                        </div>
                     </div>
                 </div>
             </div>

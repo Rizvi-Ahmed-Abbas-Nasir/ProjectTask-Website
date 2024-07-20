@@ -296,7 +296,9 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .CircleContent{
     content: "";
@@ -305,7 +307,6 @@
     border: 4px solid #ff008a; 
     width: 80%;
     height: 80%;
-    margin-top: 2rem;
 
 }
 .FrontPhotoBox{
@@ -388,7 +389,7 @@
 .TextsAndButton{
    display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 8rem;
     color: var(--base-text-clr);
 }
@@ -510,7 +511,7 @@
 }
 
 .FeatureText h1{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: #203066;
 }
 .FeatureText p{
@@ -523,6 +524,8 @@
     gap: 2rem;
 }
 .FeaturedBoxes{
+    gap: 1rem;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,6 +535,20 @@
     background-color: var(--background);
     box-shadow: var(--showdow-box);
     border:1px solid rgb(219, 217, 217);
+
+}
+.FeaturedCircle{
+    content: "";
+    width: 40%;
+    height: 60%;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.FeaturedP{
+    color: var(--base-text-clr);
 }
 
 /* ## */
@@ -578,11 +595,44 @@
 
 .ServicesBoxContent{
     width: 80%;
-    height: 40vh;
+    height: 35vh;
+    gap: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+}
+
+.ProvidersBoxIMG1{
+    filter: brightness(80%);
+    content: "";
+    background-color: #d8d9dc;
+    width: 80%;
+    height: 35vh;
+    border-radius: 20px;
+    background-image: url("../Images/ITsupoort.png");
+}
+.ProvidersBoxIMG4{
+    filter: brightness(80%);
+
+    border-radius: 20px;
+    width: 80%;
+    background-image: url("../Images/carrepiar.png");
+}
+.ProvidersBoxIMG3{
+    filter: brightness(80%);
+    width: 80%;
+    background-image: url("../Images/ITsupoort.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.ProvidersBoxIMG2{
+    filter: brightness(80%);
+  
+    width: 80%;
+    background-image: url("../Images/build.png");
+    border-radius: 20px;
 }
 .ComputerReparingIMh{
     border-radius: 10px;
@@ -664,6 +714,7 @@
 }
 .WorksText p{
     color: var(--base-text-clrf);
+    color: var(--base-text-clr);
 }
 
 .WorksText h1{
@@ -680,7 +731,7 @@
 
 .WorksBoxes{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
     height: 40vh;
@@ -688,6 +739,23 @@
     background-color: var(--background);
     box-shadow: var(--showdow-box);
     border:1px solid rgb(219, 217, 217);
+    flex-direction: column;
+
+}
+.WorksBoxesCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 5vh;
+}
+.WorksBoxDetails{
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+    color: var(--base-text-clr);
+
 }
 /* $$ */
 
@@ -724,11 +792,13 @@
     gap: 2rem;
 }
 .boximg{
-    width: 100%;
+    width: 70%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 40px;
+    background-color: #f6f2f2;
 }
 .ProvidersBoxes{
     display: flex;
@@ -751,8 +821,9 @@
     align-items: center;
     width: 100%;
     background-color: var(--background);
-    height: 150vh;
+    /* height: 150vh; */
     min-height: 100vh; /* Change height to min-height */
+
 }
 
 .PlanContent {
@@ -808,6 +879,8 @@
     color: var(--base-text-clr-opp);
     margin-top: -3rem;
     min-height: 75vh;
+    min-height: 60vh;
+    object-fit: cover;
 }
 
 .PlanoneBtn button{
@@ -1166,14 +1239,16 @@
 }
 .TopBoexe{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
-    height: 25vh;
+    width: 40%;
+    height: 40vh;
     border-radius: 10px;
     background-color: var(--background);
     box-shadow: var(--showdow-box);
     border:1px solid rgb(219, 217, 217);
+    flex-direction: column;
+    color: var(--base-text-clr);
 }
 
 /* ## */

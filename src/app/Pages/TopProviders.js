@@ -29,38 +29,57 @@ export default function TopProviders() {
                             <Image 
                                 className="ComputerReparingIMh"
                                 src="https://www.svgrepo.com/show/228333/businesswoman-woman.svg"
-                                height={50}
-                                width={50}
+                                height={30}
+                                width={30}
                             />
+                            </div>
+                            <div>
+                                <h1>Olivia</h1>
                             </div>
                           
                         </div>
                     </div>
                     <div className="TopBoexe">
+                    <div  className="boximg"> 
                
                     <Image 
                                 className="ComputerReparingIMh"
                                 src="https://www.svgrepo.com/show/228377/businessman.svg"
-                                height={50}
-                                width={50}
+                                height={30}
+                                width={30}
                             />
+                            </div>
+                            <div>
+                                <h1>Romilly</h1>
+                            </div>
                     
                     </div>
                     <div className="TopBoexe">
+                    <div  className="boximg"> 
                     <Image 
                                 className="ComputerReparingIMh"
                                 src=" https://www.svgrepo.com/show/228334/teamwork-team.svg"
-                                height={50}
-                                width={50}
+                                height={30}
+                                width={30}
                             />
+                            </div>
+                            <div>
+                                <h1>Lorcan</h1>
+                            </div>
                     </div>
                     <div className="TopBoexe">
+                    <div  className="boximg"> 
+
                     <Image 
                                 className="ComputerReparingIMh"
                                 src="https://www.svgrepo.com/show/228349/businessmen-trade.svg"
-                                height={50}
-                                width={50}
+                                height={30}
+                                width={30}
                             />
+                            </div>
+                            <div>
+                                <h1>Hester</h1>
+                            </div>
                     </div>
                 </div>
             </div>

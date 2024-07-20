@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const montserrat = Montserrat({ 
   subsets: ['latin'],
-  weight: ['600'] 
+  weight: ['400'] 
 })
 
 

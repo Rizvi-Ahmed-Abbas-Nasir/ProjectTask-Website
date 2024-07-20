@@ -4,6 +4,7 @@ import OnScrollAnimation from '../OnScrollAnimmation';
 import Image from "next/image";
 
 
+
 export default function HowITWorks() {
      //On Scroll Animation Function
      useEffect(()=> {
@@ -26,25 +27,45 @@ export default function HowITWorks() {
                 </div>
                 <div className="WorksBox">
                     <div className="WorksBoxes">
+                    <div className="WorksBoxesCircle" >
                     <Image 
                                 src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-3.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="WorksBoxDetails">
+                                <h2>Tasks</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
                     </div>
                     <div className="WorksBoxes">
+                    <div className="WorksBoxesCircle">
+
                     <Image 
                                 src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-2.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="WorksBoxDetails">
+                                <h2>Search</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
                     </div>
                     <div className="WorksBoxes">
+                    <div className="WorksBoxesCircle">
+
                     <Image 
                                 src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-1.svg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                             />
+                            </div>
+                            <div className="WorksBoxDetails">
+                                <h2>Map</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
                     </div>
                   
                 </div>
