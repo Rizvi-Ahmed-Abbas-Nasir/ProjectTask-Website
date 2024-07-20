@@ -65,7 +65,7 @@ export default function Providers() {
                         <div  className="boximg"> 
                         <Image 
                             className="ComputerReparingIMh"
-                            src="https://www.svgrepo.com/show/228349/businessmen-trade.svg"
+                            src=" https://www.svgrepo.com/show/228334/teamwork-team.svg"
                             height={30}
                             width={30}
                         />

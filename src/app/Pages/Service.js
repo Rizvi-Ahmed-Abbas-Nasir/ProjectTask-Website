@@ -31,7 +31,7 @@ export default function Service() {
                             <div  className="boximg"> 
                             <Image 
                                 className="ComputerReparingIMh"
-                                src="https://www.svgrepo.com/show/393242/car-repair.svg"
+                                src="https://www.svgrepo.com/show/513278/bus.svg"
                                 height={50}
                                 width={50}
 
@@ -56,7 +56,7 @@ export default function Service() {
                             <div  className="boximg"> 
                             <Image 
                                 className="ComputerReparingIMh"
-                                src="https://www.svgrepo.com/show/48307/technical-support.svg"
+                                src="https://www.svgrepo.com/show/424606/college-education-graduate.svg"
                                 height={50}
                                 width={50}
 
@@ -81,7 +81,7 @@ export default function Service() {
                             <div  className="boximg"> 
                             <Image 
                                 className="ComputerReparingIMh"
-                                src="https://www.svgrepo.com/show/155324/computer-service.svg"
+                                src="https://www.svgrepo.com/show/424614/computer-display-education.svg"
                                 height={70}
                                 width={60}
 

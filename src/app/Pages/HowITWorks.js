@@ -29,7 +29,7 @@ export default function HowITWorks() {
                     <div className="WorksBoxes">
                     <div className="WorksBoxesCircle" >
                     <Image 
-                                src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-3.svg"
+                                src="https://www.svgrepo.com/show/192583/tasks-list.svg"
                                 width={80}
                                 height={80}
                             />
@@ -43,7 +43,7 @@ export default function HowITWorks() {
                     <div className="WorksBoxesCircle">
 
                     <Image 
-                                src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-2.svg"
+                                src="https://www.svgrepo.com/show/508317/search.svg"
                                 width={80}
                                 height={80}
                             />
@@ -57,7 +57,7 @@ export default function HowITWorks() {
                     <div className="WorksBoxesCircle">
 
                     <Image 
-                                src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/work-seven-1.svg"
+                                src="https://www.svgrepo.com/show/530260/map.svg"
                                 width={80}
                                 height={80}
                             />

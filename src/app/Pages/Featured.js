@@ -28,7 +28,7 @@ export default function Featured() {
                     <div className="FeaturedBoxes">
                         <div className="FeaturedCircle">
                             <Image 
-                                src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/computer.svg"
+                                src="https://www.svgrepo.com/show/513283/building.svg"
                                  
                                 width={80}
                                 height={80}
@@ -42,7 +42,7 @@ export default function Featured() {
                     <div className="FeaturedBoxes">
                     <div className="FeaturedCircle">
                     <Image 
-                                src=" https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/construction.svg"
+                                src="https://www.svgrepo.com/show/499755/computer.svg"
                                 width={80}
                                 height={80}
                             />
@@ -55,7 +55,7 @@ export default function Featured() {
                     <div className="FeaturedBoxes">
                     <div className="FeaturedCircle">
                     <Image 
-                                src="  https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/painting.svg"
+                                src="https://www.svgrepo.com/show/513282/car.svg"
                                 width={80}
                                 height={80}
                             />
@@ -66,7 +66,8 @@ export default function Featured() {
                    
                     </div>
                     <div className="FeaturedBoxes">
-                    <div className="FeaturedCircle">
+                    <div className="FeaturedCircle
+                    ">
                     <Image 
                                 src=" https://www.svgrepo.com/show/67430/paint-brush.svg"
                                 width={80}

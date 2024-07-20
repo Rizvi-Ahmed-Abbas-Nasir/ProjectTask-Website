@@ -33,7 +33,7 @@ export default function Plans() {
                     <div className="PlanPricingBox">
                     <div className="PlanBox2">
                             <div className="PlaneIMg2">
-                                <Image src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/pricing-seven-3.svg"
+                                <Image src="https://www.svgrepo.com/show/452080/paper-rocket.svg"
                                 width={55}
                                 height={55}
                                 />
@@ -75,7 +75,7 @@ export default function Plans() {
                                 <button>Most Popular</button>
                             </div>
                             <div className="PlaneIMg">
-                                <Image src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/pricing-seven-2.svg"
+                                <Image src="https://www.svgrepo.com/show/152281/rocket-ship.svg"
                                 width={55}
                                 height={55}
                                 />
@@ -114,7 +114,7 @@ export default function Plans() {
                     <div className="PlanPricingBox">
                     <div className="PlanBox2">
                             <div className="PlaneIMg2">
-                                <Image src="https://truelysell.dreamstechnologies.com/html/template/assets/img/icons/pricing-seven-1.svg"
+                                <Image src="https://www.svgrepo.com/show/7814/purse.svg"
                                 width={55}
                                 height={55}
                                 />
