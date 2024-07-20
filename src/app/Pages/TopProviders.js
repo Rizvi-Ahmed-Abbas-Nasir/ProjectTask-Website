@@ -16,7 +16,7 @@ export default function TopProviders() {
         }
         },[]);
     return(
-        <div className="TopContainer">
+        <div className="TopContainer newTopContainer">
             <div className="TopContent hidden">
                 <div className="TopText">
                     <h1>Top Providers</h1>

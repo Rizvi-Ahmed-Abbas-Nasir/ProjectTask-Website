@@ -117,12 +117,13 @@
 .Header{
     width: 100%;
     min-height: 10vh;
-    height: 10vh;
     background-color:var(--background);
     color: var(--base-text-clr);
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
     transition: all 100ms ease-in 0s;
     position: sticky;
+
+   
 }
 .is-sticky {
     position: fixed;
@@ -135,6 +136,9 @@
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding-top: 0px;
     padding-bottom: 0px;
+    min-height: 10vh;
+ 
+
   }
   
 /* HamBurger Icon */
@@ -203,9 +207,9 @@
    }
 
 .R_Logo{
-    width: 8rem;
-    height: 4.5rem;
-    min-height: 3rem;
+    width:6rem;
+    min-width: 5rem;
+    height: 4%;
    background: white;
    border-radius: 30px;
 }
@@ -215,7 +219,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    height: 10vh;   
+    min-height: 10vh;   
 }
 .HeadersText{
     display: flex;
@@ -530,7 +534,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 25vh;
+    height: 30vh;
     border-radius: 10px;
     background-color: var(--background);
     box-shadow: var(--showdow-box);
@@ -540,7 +544,7 @@
 .FeaturedCircle{
     content: "";
     width: 40%;
-    height: 60%;
+    height: 50%;
     background-color: rgb(245, 244, 244);
     display: flex;
     align-items: center;
@@ -557,7 +561,7 @@
 /* Featured Content */
 .ServicesContainer{
     width: 100%;
-    height: 120vh;
+    height: 130vh;
     background-color: var(--background);
     
 }
@@ -593,15 +597,7 @@
     align-items: start;
 }
 
-.ServicesBoxContent{
-    width: 80%;
-    height: 35vh;
-    gap: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .ProvidersBoxIMG1{
     filter: brightness(80%);
@@ -669,14 +665,26 @@
     align-items: center;
     gap: 2rem;
     width: 90%;
+    min-height: 60vh;
 }
-
+.ServicesBoxContent{
+    width: 80%;
+    object-fit: cover;
+    height: 35vh;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
 .ServiesBoxes{
     display: flex;
     justify-content: center;
+    min-height: 20rem;
+
     align-items: center;
     width: 50%;
-    height: 40vh;
+    object-fit: cover;
     border-radius: 10px;
     background-color: var(--background);
     box-shadow: var(--showdow-box);
@@ -734,7 +742,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
-    height: 40vh;
+    min-height: 20rem;
     border-radius: 10px;
     background-color: var(--background);
     box-shadow: var(--showdow-box);
@@ -878,7 +886,6 @@
     background-color: #203066;
     color: var(--base-text-clr-opp);
     margin-top: -3rem;
-    min-height: 75vh;
     min-height: 60vh;
     object-fit: cover;
 }
@@ -1414,7 +1421,6 @@
 .CircleContent{
     width: 90%;
     height: 85%;
-    margin-top:1rem ;
 }
 .CircularImage{
     width: 30%;
@@ -1428,11 +1434,16 @@
     width: 100%;
     height: 120vh;
     display: flex;
-    margin-top:35rem;
     gap: 5rem;
     justify-content: center;
     align-items: center;
     flex-direction: column ;
+}
+.PlanPricingBox:nth-child(2){
+    min-height: 80vh;
+    max-height: 69vh;
+    object-fit: contain;
+
 }
 .PlanPricingBox{
     width: 80%;
@@ -1477,9 +1488,18 @@
 .PlanLastBTN{
     margin-top: -0.5rem;
 }
+
+.WorksBoxes{
+    width: 80%;
+    height: 60vh;
+}
+.WorksBoxDetails p{
+    font-size: 0.9rem;
+
+}
 /* $$ */
    
-  }
+}
   
   
   
@@ -1515,7 +1535,6 @@
 .CircleContent{
     width: 90%;
     height: 85%;
-    margin-top:1rem ;
 }
 .CircularImage{
     width: 30%;
@@ -1678,7 +1697,8 @@
 }
 .WorksBoxes{
     width: 70%;
-    height: 30vh;
+    height: 40vh;
+    gap: 0rem   ;
 }
 .TopContainer{
     height: 200vh;
@@ -1689,7 +1709,7 @@
 }
 .TopBoexe{
     width: 90%;
-    height: 20vh;
+    height: 50vh;
 }
 
 
@@ -1758,14 +1778,20 @@
 .PlanContainer{
     height: 400vh;
 }
+.newTopContainer{
+    height: 340vh;
+}
 /* $$ */
 }
+
   
   
   
 @media screen and (max-width:481px){
     .Header{
-        min-height: 12vh;
+        min-height: 10vh;
+        max-height: 12vh;
+        object-fit: contain;
     }
     .HeadersText{
         display: none;
@@ -1807,12 +1833,14 @@
         margin-top: 0.5rem;
     }
     .FrontPage{
-        height: 200vh;
+        height: 140vh;
     }
-  
+    .FeaturedCircle{
+        width: 50%;
+    }
     
     .FeaturedContainer {
-        height: 200vh;
+        height: 130vh;
     }
     .FeatureContent{
         align-items: center;
@@ -1824,6 +1852,7 @@
     }
     .FeaturedBoxes{
         width: 100%;
+        height: 30vh;
     }
     .FrontTextcontent{
         display: flex;
@@ -1832,8 +1861,8 @@
         align-items: center;
         text-align: center;
     }
-    .ForntearchContainer{
-        margin-top: 7rem;
+    .FeaturedCircle{
+        width: 60%;
     }
     .TextsAndButton{
         width: 90%;
@@ -1844,7 +1873,7 @@
         flex-direction: column;
     }
     .FeaturedContainer{
-        margin-top: 10rem;
+        height: 220vh;
     }
     .PlanPricingBoxs{
         width: 100%;
@@ -1860,11 +1889,10 @@
         width: 80%;
     }
     .PlanContent{
-        margin-top: 20rem;
+        height: 250vh;
     }
     .DownloadContainer{
-        margin-top: 65rem;
-    
+        height: 240vh;
     }
     .DownloadContent{
         width: 95%;
@@ -1883,8 +1911,6 @@
     .PartnersContent{
         width: 70%;
         height: 100vh;
-        margin-top: 20rem;
-       
     }
     
     .PartnerBox{
@@ -1951,10 +1977,6 @@
         font-size: 0.9rem;
     }
     
-    .ServiceContent{
-        margin-top: 36rem;
-        gap: 2rem;
-    }
     .ServiresBox{
         display: flex;
         flex-wrap: wrap;
@@ -1970,17 +1992,21 @@
     }
     .WorksBox{
         flex-wrap: wrap;
+        
     }
     .WorksBoxes{
         width: 70%;
-        height: 30vh;
+        height: 40vh;
     }
     .TopContainer{
-        margin-top: 34rem;
+        height: 280vh;
     }
     .TopContent{
         align-items: center;
         text-align: center;
+    }
+    .newTopContainer{
+        height: 270vh;
     }
     .TopsBox{
         display: flex;
@@ -1988,7 +2014,7 @@
     }
     .TopBoexe{
         width: 90%;
-        height: 20vh;
+        height: 60vh;
     }
     
     .ProvidersContent{
@@ -2004,10 +2030,13 @@
         flex-wrap: wrap;
     }
     .PlanContainer{
-        height:160vh;
+        height:300vh;
     }
     .DownloadBox{
         width: 100%;
+    }
+    .DownloadContent{
+        height: 240vh;
     }
     .DownloadContent{
         width: 90%;
@@ -2119,7 +2148,7 @@
         margin-top: 0.5rem;
     }
     .FrontPage{
-        height: 200vh;
+        height: 120vh;
     }
   
     
@@ -2137,6 +2166,9 @@
     .FeaturedBoxes{
         width: 100%;
     }
+    .FeaturedCircle{
+        width: 80%;
+    }
     .FrontTextcontent{
         display: flex;
         flex-direction: column;
@@ -2144,9 +2176,7 @@
         align-items: center;
         text-align: center;
     }
-    .ForntearchContainer{
-        margin-top: 7rem;
-    }
+   
     .TextsAndButton{
         width: 90%;
     }
@@ -2155,7 +2185,7 @@
         flex-direction: column;
     }
     .FeaturedContainer{
-        margin-top: 10rem;
+
     }
     .PlanPricingBoxs{
         width: 100%;
@@ -2262,10 +2292,6 @@
         font-size: 0.9rem;
     }
     
-    .ServiceContent{
-        margin-top: 36rem;
-        gap: 2rem;
-    }
     .ServiresBox{
         display: flex;
         flex-wrap: wrap;
@@ -2276,19 +2302,15 @@
         width: 80%;
         height: 20vh;
     }
-    .WorksContent{
-        margin-top: 25rem;
-    }
+  
     .WorksBox{
         flex-wrap: wrap;
     }
     .WorksBoxes{
         width: 70%;
-        height: 30vh;
+        height: 60vh;
     }
-    .TopContainer{
-        margin-top: 34rem;
-    }
+   
     .TopContent{
         align-items: center;
         text-align: center;
@@ -2298,14 +2320,13 @@
         flex-wrap: wrap;
     }
     .TopBoexe{
-        width: 90%;
-        height: 20vh;
+        width: 100%;
+        height: 50vh;
     }
     
     .ProvidersContent{
         align-items: center;
         text-align: center;
-        margin-top: 33rem;
     }
     .ProvidersBoxes{
         width: 90%;
@@ -2324,7 +2345,6 @@
         width: 90%;
         height: 160vh;
         flex-direction: column;
-        margin-top: 20rem;
     }
     .DownloadPhoneIMG{
         width: 80%;

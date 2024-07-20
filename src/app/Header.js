@@ -91,8 +91,7 @@ export default function Header(){
                 <div className="TextAndLogo">
                     <Image className="R_Logo"
                     src={R_Logo}
-                    width={160}
-                    height={100} 
+                    width={100}
                     />
                 </div>
                 <div className="HeadersText">
